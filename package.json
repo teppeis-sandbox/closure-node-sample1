@@ -4,10 +4,11 @@
   "author": "Teppei Sato <teppeis@gmail.com>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "closure-compiler --flagfile closure.conf"
   },
   "dependencies": {
-    "closure-compiler-cli": "^1.0.2"
+    "closure-compiler-cli": "^1.0.2",
+    "google-closure-compiler": ">=20170423.0.0"
   },
   "homepage": "https://github.com/teppeis-sandbox/closure-node-sample1#readme",
   "repository": {
