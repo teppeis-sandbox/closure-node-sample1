@@ -10,19 +10,15 @@ $ yarn
 $ yarn run build
 yarn run v0.23.3
 $ closure-compiler --flagfile closure.conf 
-index.js:1: WARNING - Failed to load module "path"
-var path = require('path');
-    ^
+node_modules/google-closure-compiler/contrib/nodejs/path.js:97: WARNING - name module is not defined in the externs.
+module.exports = path;
+^^^^^^
 
-index.js:1: WARNING - Failed to load module "path"
-var path = require('path');
-           ^
+node_modules/google-closure-compiler/contrib/nodejs/path.js:97: ERROR - variable module is undeclared
+module.exports = path;
+^^^^^^
 
-index.js:1: ERROR - Variable path first declared in node_modules/google-closure-compiler/contrib/nodejs/path.js
-var path = require('path');
-    ^^^^^^^^^^^^^^^^^^^^^^
-
-1 error(s), 2 warning(s)
+1 error(s), 1 warning(s)
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
